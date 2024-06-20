@@ -24,7 +24,9 @@ export const getNowDayFilm = async () => {
   return response.data;
 };
 
-export const fetchTrendMovies = async () => {
-  const response = await axios.get(`trending/movie/day?api_key=${API_KEY}`);
+export const getSearchFilm = async (topic) => {
+  const response = await axios.get(
+    `search/movie?query=${topic}&api_key=${API_KEY}`
+  );
   return response.data;
 };

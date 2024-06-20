@@ -1,0 +1,27 @@
+.container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #5f249f;
+    box-shadow: 0 1px 6px black;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 30px;
+
+}
+
+.form {
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.input {
+    /* display: block; */
+    height: 30px;
+}
