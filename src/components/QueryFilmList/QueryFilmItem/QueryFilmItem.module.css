@@ -11,7 +11,7 @@
     padding: 15px;
 }
 
-.poster>img {
+.poster>a>img {
     display: block;
     padding-bottom: 10px;
 }

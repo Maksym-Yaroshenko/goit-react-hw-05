@@ -24,7 +24,7 @@ export default function SearchBar({ onSearch }) {
             className={css.input}
             type="text"
             name="search"
-            placeholder="Search images and photos"
+            placeholder="Search film"
           />
           <button type="submit">Search</button>
           <Toaster position="top-right" />

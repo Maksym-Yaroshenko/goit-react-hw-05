@@ -12,6 +12,11 @@
 }
 
 .poster>img {
+    width: 200px;
     display: block;
     padding-bottom: 10px;
+}
+
+.character {
+    text-align: center;
 }

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 import css from "./HomePage.module.css";
 import Loader from "../../components/Loader/Loader";
-import HomeListPage from "./HomeListPage/HomeListPage";
+import HomeListPage from "../../components/HomeListPage/HomeListPage";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 
 export default function HomePage() {

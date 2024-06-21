@@ -1,15 +1,19 @@
+import { Link } from "react-router-dom";
 import css from "./HomePosterPage.module.css";
 
 export default function HomePosterPage({ daytimeFilm }) {
   return (
-    <div className={css.poster}>
-      <a href="">
-        <img
-          src={`https://image.tmdb.org/t/p/w200${daytimeFilm.poster_path}`}
-          alt=""
-        />
-      </a>
-      <a href="">{daytimeFilm.title}</a>
-    </div>
+    <>
+      <Link to={`/movies/${daytimeFilm.id}`}>
+        <div className={css.poster}>
+          <img
+            src={`https://image.tmdb.org/t/p/w200${daytimeFilm.poster_path}`}
+            loading="lazy"
+            alt={daytimeFilm.title}
+          />
+          <p>{daytimeFilm.title}</p>
+        </div>
+      </Link>
+    </>
   );
 }
