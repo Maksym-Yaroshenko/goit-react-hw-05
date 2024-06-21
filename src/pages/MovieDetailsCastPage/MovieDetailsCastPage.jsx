@@ -1,4 +1,4 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getCastFilm } from "../../../film-api";
 import { useEffect, useState } from "react";
 import Loader from "../../components/Loader/Loader";
@@ -13,7 +13,6 @@ export default function MovieDetailsCastPage() {
   const [loader, setLoader] = useState(false);
 
   const { moviesId } = useParams();
-  const local = useLocation();
 
   useEffect(() => {
     if (!moviesId.trim()) return;
