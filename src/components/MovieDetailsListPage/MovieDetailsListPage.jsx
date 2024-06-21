@@ -1,4 +1,4 @@
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import css from "./MovieDetailsListPage.module.css";
 
 export default function MovieDetailsListPage({

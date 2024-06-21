@@ -1,38 +1,7 @@
-// import { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
-// import { getFullFilm } from "../../../film-api";
-// import toast, { Toaster } from "react-hot-toast";
-
-// export default function MovieDetailsPage() {
-//   const { movieId } = useParams();
-//   const [fullInfoFilm, setFullInfoFilm] = useState(null);
-//   const notify = () => toast("You have not entered anything!");
-
-//   useEffect(() => {
-//     if (!movieId) return;
-//     const getMovieDetails = async () => {
-//       try {
-//         const data = await getFullFilm(movieId);
-//         console.log(data);
-//         setFullInfoFilm(data);
-//       } catch (error) {
-//         notify();
-//       }
-//     };
-//     getMovieDetails();
-//   }, [movieId]);
-
-//   return (
-//     <>
-//       <h2>fefefef {movieId}</h2>
-//     </>
-//   );
-// }
-
-import { useParams, useLocation, Link, Outlet } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import { getFullFilm } from "../../../film-api";
 import toast from "react-hot-toast";
-import { useState, useEffect, Suspense, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // import css from "./MovieDetailsPage.module.css";
 import Loader from "../../components/Loader/Loader";
