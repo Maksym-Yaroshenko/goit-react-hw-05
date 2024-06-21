@@ -1,5 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import css from "./MovieDetailsListPage.module.css";
+import { Suspense } from "react";
+import Loader from "../Loader/Loader";
 
 export default function MovieDetailsListPage({
   movieDetails,
@@ -53,7 +55,9 @@ export default function MovieDetailsListPage({
             </ul>
           </div>
         </div>
-        <Outlet />
+        <Suspense fallback={<Loader />}>
+          <Outlet />
+        </Suspense>
       </main>
     </>
   );
