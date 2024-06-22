@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 import css from "./HomePage.module.css";
 import Loader from "../../components/Loader/Loader";
-import HomeListPage from "../../components/HomeListPage/HomeListPage";
+import MovieList from "../../components/MovieList/MovieList";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 
 export default function HomePage() {
@@ -32,9 +32,7 @@ export default function HomePage() {
         <ul className={css.container}>
           {loader && <Loader />}
           {errorMessage && <ErrorMessage />}
-          {daytimeFilms.length > 0 && (
-            <HomeListPage daytimeFilms={daytimeFilms} />
-          )}
+          {daytimeFilms.length > 0 && <MovieList daytimeFilms={daytimeFilms} />}
         </ul>
       </main>
     </>

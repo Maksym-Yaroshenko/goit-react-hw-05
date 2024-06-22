@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
-import Loader from "../../components/Loader/Loader";
+import Loader from "../Loader/Loader";
 import { getReviewsFilm } from "../../../film-api";
-import MovieReviewsList from "../../components/MovieReviewsList/MovieReviewsList";
+import MovieReviewsList from "../MovieReviewsList/MovieReviewsList";
 
 const notify = () => toast("Something went wrong. Please, try again!");
 
-export default function MovieReviewsPage() {
+export default function MovieReviews() {
   const [movieReviews, setMovieReviews] = useState([]);
   const [loader, setLoader] = useState(false);
   const { moviesId } = useParams();
